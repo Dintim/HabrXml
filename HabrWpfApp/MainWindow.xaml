@@ -1,0 +1,38 @@
+﻿<Window x:Class="HabrWpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HabrWpfApp"
+        mc:Ignorable="d"
+        Title="Информация об интересном на habrahabr" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Name="lblTitle" Grid.Column="0" Grid.Row="0"></Label>
+        <Label Name="lblDescription" Grid.Column="0" Grid.Row="1"></Label>
+        <Label Name="lblManagingEditor" Grid.Column="0" Grid.Row="2"></Label>
+        <Label Name="lblGenerator" Grid.Column="0" Grid.Row="3"></Label>
+        <Label Name="lblPubdate" Grid.Column="0" Grid.Row="4"></Label>
+        <Button Name="btnGetInfo" Click="Button_GetInfo" Grid.Column="0" Grid.Row="5" Margin="10" 
+                Content="Получить информацию"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"></Button>
+        <Button Name="btnCreateXML" Click="Button_CreateXML" Grid.Column="0" Grid.Row="6" Margin="10"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center">Создать XML
+        </Button>
+        <TextBox Name="txbMessage"  Grid.Column="0" Grid.Row="7"></TextBox>
+    </Grid>
+</Window>
